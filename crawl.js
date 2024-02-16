@@ -11,8 +11,8 @@ async function crawlPage(url) {
         }
 
         const contentType = response.headers.get("content-type")
-        if (contentType !== "text/html") {
-            console.log(`Content is not html, but: '${contentType}' for page "${url}"`)
+        if (!contentType.includes("text/html")) {
+            console.log(`Content is not 'html', but: '${contentType}' for page "${url}"`)
             return
         }
 
