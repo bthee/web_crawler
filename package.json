@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "node main.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/bthee/web_crawler/issues"
   },
-  "homepage": "https://github.com/bthee/web_crawler#readme"
+  "homepage": "https://github.com/bthee/web_crawler#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
